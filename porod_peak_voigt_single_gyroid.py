@@ -132,7 +132,7 @@ def Iq(q,scale_Porod,a_cell, w_f, hwhm_q110, hwhm_q211, hwhm_q220, hwhm_q310, hw
         q420=np.sqrt(20)*2*np.pi/a_cell
         q332=np.sqrt(22)*2*np.pi/a_cell
         q422=np.sqrt(24)*2*np.pi/a_cell
-        porod = (scale_Porod/q)**4
+        porod = scale_Porod/q**4
         L2 = Ipeak(q,w_f,q110,hwhm_q110)
         L6 = Ipeak(q,w_f,q211,hwhm_q211)
         L8 = Ipeak(q,w_f,q220,hwhm_q220)
